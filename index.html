@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RREF Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="mat_input">
+            <div class="con-head">Reduced Row Echelon Form (RREF) Calculator</div>
+            <div>
+                <br>
+                <div">Dimension: <input onclick="this.select();" type="number" value="3" class="mat_size" id="size_row"> x <input value="4" type="number" class="mat_size" onclick="this.select();" id="size_col"> <button onclick="change_dimension()">GO!</button></div>
+                <br>
+    
+                <table id="matrix"></table>
+                <br>
+    
+                <button id="mat_cal" onclick="calculate_rref()">Calculate</button>
+            </div>
+        </div>
+        <div id="mat_out_con"></div>
+    </div>
+</body>
+</html>
