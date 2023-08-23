@@ -1,10 +1,7 @@
 x = [
-    [5,2,3,4],
-    [4,5,6,7],
-    [3,5,7,2],
-    [3,5,3,5],
-    [2,1,6,4],
-    [3,6,6,4],
+    [-1, 2, -13, 3, 3],
+    [4, 3, -9, 1, 1],
+    [3, -1, 8, -2, -2],
 ]
 
 size = len(x), len(x[0])
@@ -19,6 +16,7 @@ def print_mat(x):
 
 
 for i in range(size[1]-1):
+    if i >= size[1] or i >= size[0]: continue
     c = x[i][i]
     if c == 0: continue
     for k in range(size[1]):

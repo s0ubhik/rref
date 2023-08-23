@@ -30,7 +30,9 @@ function mat_to_table(x){
 function rref(x){
     let output = "";
     for (let i = 0; i < mat_size[1] - 1; i++) {
+        if (i >= mat_size[1] || i >= mat_size[0]) continue;
         let c = x[i][i];
+        console.log(i);
         if (c === 0) continue;
 
         output += "<div class=\"msg\">Divide all elements of R"+(i+1)+" with the "+ordinal_suffix_of(i+1)+" element of R"+(i+1)+"<br></div>"
@@ -51,6 +53,7 @@ function rref(x){
     }
 
     for (let i = 0; i < mat_size[1] - 1; i++) {
+        if (i >= mat_size[1] || i >= mat_size[0]) continue;
 
         for (let r = 0; r < i; r++) {
             let c = x[r][i];
