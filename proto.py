@@ -28,6 +28,10 @@ for i in range(size[1]-1):
         for k in range(i, size[1]):
             x[r][k] = x[r][k] - x[i][k]*c
     
+    print_mat(x)
+
+for i in range(size[1]-1):
+    if i >= size[1] or i >= size[0]: continue
     # make alove element zero
     for r in range(0, i):
         c = x[r][i] / x[i][i]

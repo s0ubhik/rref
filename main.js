@@ -18,7 +18,7 @@ function mat_to_table(x){
     for (let i = 0; i < x.length; i++) {
         res += "<tr>";
         for (let j = 0; j < x[i].length; j++) {
-            res += "<td><input type=\"number\" class=\"mat_value\"\" value=\""+(Number.isInteger(x[i][j])? x[i][j] : x[i][j].toFixed(2) )+"\"></td>";
+            res += "<td class=\"mat_value\">"+(Number.isInteger(x[i][j])? x[i][j] : x[i][j].toFixed(2) )+"</td>";
         }
         res += "</tr>";
     }

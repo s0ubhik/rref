@@ -32,6 +32,7 @@ body {
 
 .mat_value {
     width: 50px;
+    font-size: 14px;
     border: 1px solid grey;
     text-align: center;
 }
